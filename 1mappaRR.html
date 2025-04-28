@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f45f9e0e264ae7ae69d50980887e20c3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div style="font-size: 30px; font-weight: bold; color: #FF69B4; text-align: center; padding: 10px; 
+    position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 9999;">
+        Raptus&Rose
+    </div>
+    
+            <div class="folium-map" id="map_f45f9e0e264ae7ae69d50980887e20c3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f45f9e0e264ae7ae69d50980887e20c3 = L.map(
+                "map_f45f9e0e264ae7ae69d50980887e20c3",
+                {
+                    center: [45.8183, 12.2163],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_f45f9e0e264ae7ae69d50980887e20c3);
+
+            
+
+        
+    
+            var tile_layer_24f5d0eec0d81310d04354259238dcda = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_24f5d0eec0d81310d04354259238dcda.addTo(map_f45f9e0e264ae7ae69d50980887e20c3);
+        
+    
+            var marker_84e96b044aa662e6673103a0030ecd10 = L.marker(
+                [46.1928, 12.2175],
+                {
+}
+            ).addTo(map_f45f9e0e264ae7ae69d50980887e20c3);
+        
+    
+            var icon_3bcdb85f274dcb75a6b6913635afdf59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "#FF69B4",
+  "icon": "fa-suitcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f37f9a739c3e7a166ee578934c53d965 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a7c5aaaaa65a0de36a19442df1198be2 = $(`<div id="html_a7c5aaaaa65a0de36a19442df1198be2" style="width: 100.0%; height: 100.0%;">     <div style="border: 3px solid #FF69B4; border-radius: 10px; padding: 10px; background-color: #f9f9f9;">         <b>Atelier su Fiume</b><br>         Via Alzaia 1, 32100 Belluno, Italia<br>         Belluno/Veneto     </div>     </div>`)[0];
+                popup_f37f9a739c3e7a166ee578934c53d965.setContent(html_a7c5aaaaa65a0de36a19442df1198be2);
+            
+        
+
+        marker_84e96b044aa662e6673103a0030ecd10.bindPopup(popup_f37f9a739c3e7a166ee578934c53d965)
+        ;
+
+        
+    
+    
+            marker_84e96b044aa662e6673103a0030ecd10.bindTooltip(
+                `<div>
+                     Clique para mais detalhes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_84e96b044aa662e6673103a0030ecd10.setIcon(icon_3bcdb85f274dcb75a6b6913635afdf59);
+            
+    
+            var marker_51fb976d0b71d07e0c39982fc17c91cc = L.marker(
+                [45.4742, 9.1808],
+                {
+}
+            ).addTo(map_f45f9e0e264ae7ae69d50980887e20c3);
+        
+    
+            var icon_aeac5b06a8b9f52dc5b7dc09436c7a40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "#FF69B4",
+  "icon": "fa-suitcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07873493349cc2f9b486c614e03ca145 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f63df58dd7da5d81964c0679de9fcd1 = $(`<div id="html_3f63df58dd7da5d81964c0679de9fcd1" style="width: 100.0%; height: 100.0%;">     <div style="border: 3px solid #FF69B4; border-radius: 10px; padding: 10px; background-color: #f9f9f9;">         <b>Residenza Milanese</b><br>         Via Carlo Farini 8, 20154 Milano, Italia<br>         Milano/Lombardia     </div>     </div>`)[0];
+                popup_07873493349cc2f9b486c614e03ca145.setContent(html_3f63df58dd7da5d81964c0679de9fcd1);
+            
+        
+
+        marker_51fb976d0b71d07e0c39982fc17c91cc.bindPopup(popup_07873493349cc2f9b486c614e03ca145)
+        ;
+
+        
+    
+    
+            marker_51fb976d0b71d07e0c39982fc17c91cc.bindTooltip(
+                `<div>
+                     Clique para mais detalhes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_51fb976d0b71d07e0c39982fc17c91cc.setIcon(icon_aeac5b06a8b9f52dc5b7dc09436c7a40);
+            
+    
+            tile_layer_24f5d0eec0d81310d04354259238dcda.addTo(map_f45f9e0e264ae7ae69d50980887e20c3);
+        
+    
+                marker_84e96b044aa662e6673103a0030ecd10.setIcon(icon_3bcdb85f274dcb75a6b6913635afdf59);
+            
+    
+                marker_51fb976d0b71d07e0c39982fc17c91cc.setIcon(icon_aeac5b06a8b9f52dc5b7dc09436c7a40);
+            
+    
+            tile_layer_24f5d0eec0d81310d04354259238dcda.addTo(map_f45f9e0e264ae7ae69d50980887e20c3);
+        
+    
+                marker_84e96b044aa662e6673103a0030ecd10.setIcon(icon_3bcdb85f274dcb75a6b6913635afdf59);
+            
+    
+                marker_51fb976d0b71d07e0c39982fc17c91cc.setIcon(icon_aeac5b06a8b9f52dc5b7dc09436c7a40);
+            
+    
+            tile_layer_24f5d0eec0d81310d04354259238dcda.addTo(map_f45f9e0e264ae7ae69d50980887e20c3);
+        
+    
+                marker_84e96b044aa662e6673103a0030ecd10.setIcon(icon_3bcdb85f274dcb75a6b6913635afdf59);
+            
+    
+                marker_51fb976d0b71d07e0c39982fc17c91cc.setIcon(icon_aeac5b06a8b9f52dc5b7dc09436c7a40);
+            
+    
+            tile_layer_24f5d0eec0d81310d04354259238dcda.addTo(map_f45f9e0e264ae7ae69d50980887e20c3);
+        
+    
+                marker_84e96b044aa662e6673103a0030ecd10.setIcon(icon_3bcdb85f274dcb75a6b6913635afdf59);
+            
+    
+                marker_51fb976d0b71d07e0c39982fc17c91cc.setIcon(icon_aeac5b06a8b9f52dc5b7dc09436c7a40);
+            
+</script>
+</html>
